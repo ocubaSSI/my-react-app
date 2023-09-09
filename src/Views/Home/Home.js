@@ -1,13 +1,15 @@
 import React from "react";
-import styled from 'styled-components'
 import './Home.css'
 
 export default function Home() {
 
   return(
-    <Container>
+    <div
+      className="container-home"
+    >
 
       <a href="/flex"> Go to Flex </a>
+      <a href="/styled"> Go to Styled </a>
 
       <p>Home</p>
       
@@ -18,13 +20,6 @@ export default function Home() {
         className="imageclass"
       /> 
 
-    </Container>
+    </div>
   )
 }
-
-const Container = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-`
